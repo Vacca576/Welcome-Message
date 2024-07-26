@@ -1,5 +1,4 @@
 using Exiled.API.Features;
-using Exiled.Events;
 using Exiled.Events.EventArgs.Player;
 using System;
 
@@ -26,7 +25,8 @@ namespace WelcomeMessage
 
         private void OnPlayerVerified(VerifiedEventArgs ev)
         {
-            ev.Player.Broadcast(15, "Benvenuto nel server"); // Invia un messaggio di broadcast di 15 secondi
+            ev.Player.Broadcast(Config.MessageDuration, Config.WelcomeMessage);
+            Log.Info($"Messaggio di benvenuto inviato a {ev.Player.Nickname}: {Config.WelcomeMessage}");
         }
     }
 }
