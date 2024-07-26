@@ -10,7 +10,7 @@ namespace WelcomeMessage
         public override string Name => "WelcomeMessage";
         public override string Author => "Vacca";
         public override string Prefix => "Welcome";
-        public override Version RequiredExiledVersion => new Version(9, 0, 0);
+        public override Version RequiredExiledVersion => new Version(8, 9, 11);
 
         public override void OnEnabled()
         {
@@ -26,7 +26,7 @@ namespace WelcomeMessage
 
         private void OnPlayerVerified(VerifiedEventArgs ev)
         {
-            ev.Player.Broadcast(5, "Benvenuto nel server"); // Invia un messaggio di broadcast di 5 secondi
+            ev.Player.Broadcast(15, "Benvenuto nel server"); // Invia un messaggio di broadcast di 15 secondi
         }
     }
 }
