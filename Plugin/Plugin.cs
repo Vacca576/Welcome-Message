@@ -1,4 +1,4 @@
-﻿using Exiled.API.Features;
+using Exiled.API.Features;
 using Exiled.Events;
 using Exiled.Events.EventArgs.Player;
 using System;
@@ -30,4 +30,3 @@ namespace WelcomeMessage
         }
     }
 }
-  
