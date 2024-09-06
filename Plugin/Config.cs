@@ -5,16 +5,17 @@ namespace WelcomeMessage
 {
     public class Config : IConfig
     {
-        [Description("Indica se il plugin è abilitato.")]
+        [Description("Plugin Enabled?")]
         public bool IsEnabled { get; set; } = true;
 
-        [Description("Messaggio di benvenuto personalizzato.")]
-        public string Broadcast { get; set; } = "Benvenuto nel server!";
+        [Description("Debug Enabled?.")]
+        public bool Debug { get; set; } = false;
 
-        [Description("Tempo di visualizzazione del messaggio in secondi.")]
+        [Description("Message on player join.")]
+        public string Message { get; set; } = "<color=lime>Welcome %player%! Please read our rules!</color>";
+
+        [Description("Duration of Message.")]
         public ushort MessageDuration { get; set; } = 15;
 
-        [Description("Indica se il debug è abilitato.")]
-        public bool Debug { get; set; } = false;
     }
 }
