@@ -1,5 +1,7 @@
 using Exiled.API.Features;
+using Exiled.Events;
 using Exiled.Events.EventArgs.Player;
+using Exiled.API.Enums;
 using System;
 
 namespace WelcomeMessage
@@ -25,8 +27,8 @@ namespace WelcomeMessage
 
         private void OnPlayerVerified(VerifiedEventArgs ev)
         {
-            ev.Player.Broadcast(Config.MessageDuration, (Config.Broadcast));
-            Log.Debug($"Messaggio di benvenuto inviato a {ev.Player.Nickname}: {Config.Broadcast}");
+            ev.Player.Broadcast(Config.MessageDuration, Config.Message );
+            Log.Debug($"Welcome Message sent to {ev.Player.Nickname}: {Config.Message}");
         }
     }
 }
