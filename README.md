@@ -1,5 +1,6 @@
-[![downloads](https://img.shields.io/github/downloads/Vacca576/WelcomePlugin/total?style=for-the-badge&logo=icloud&color=%233A6D8C)](https://github.com/Vacca576/WelcomePlugin/releases/latest)ㅤ
-![Latest](https://img.shields.io/github/v/release/Vacca576/WelcomePlugin?style=for-the-badge&label=Latest%20Release&color=%23D91656)
+[![downloads](https://img.shields.io/github/downloads/Vacca576/Welcome-Message/total?style=for-the-badge&logo=icloud&color=%233A6D8C)](https://github.com/Vacca576/Welcome-Message/releases/latest)ㅤ
+![Latest](https://img.shields.io/github/v/release/Vacca576/Welcome-Message?style=for-the-badge&label=Latest%20Release&color=%23D91656)
+
 
 # WelcomePlugin for EXILED
 
